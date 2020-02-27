@@ -1,0 +1,293 @@
+body {
+background:#f4f4f4;
+}
+
+.container {
+width:960px;
+font-family:"Open Sans";
+margin:0 auto;
+}
+
+.header {
+border-bottom:1px solid silver;
+padding:3.5em 0;
+}
+
+.nav ul {
+margin:25px 0 0 25px;
+}
+
+.nav ul li {
+display:inline-block;
+outline:medium none;
+text-decoration:none;
+text-transform:uppercase;
+letter-spacing:1px;
+font-weight:400;
+font-size:16px;
+margin:0 .5em;
+}
+
+.nav ul li a {
+position:relative;
+display:inline-block;
+outline:medium none;
+color:#FE9B00;
+text-decoration:none;
+text-transform:uppercase;
+letter-spacing:1px;
+font-weight:600;
+text-shadow:0 0 1px rgba(255,255,255,0.3);
+font-size:1em;
+margin:1em .8em;
+}
+
+.headerimg {
+min-height:264px;
+margin:1.5em 0;
+padding:19px 0 0;
+}
+
+.random {
+border-top:1px solid silver;
+padding:24px 0;
+}
+
+.random p {
+color:#5D5D5D;
+font-size:1em;
+line-height:1.8em;
+font-weight:400;
+font-family:"Open Sans";
+margin:1em 0;
+}
+
+a.read {
+display:inline-block;
+font-size:1em;
+font-weight:600;
+color:#FE9B00;
+text-decoration:none;
+}
+
+a.read i {
+color:#090909;
+}
+
+.benefits i p {
+padding:0 0 0 26px;
+}
+
+.test {
+width:283px;
+float:left;
+}
+
+.portfolio {
+border-top:1px solid silver;
+border-bottom:1px solid silver;
+position:relative;
+float:left;
+padding:19px 0;
+}
+
+.portfolio h2 {
+color:#090909;
+text-transform:uppercase;
+font-weight:600;
+font-size:1.7em;
+vertical-align:middle;
+margin:0 0 1em;
+}
+
+.img1 a.buton1 {
+background:none repeat scroll 0 0 #FE9B00;
+color:#090909;
+font-size:1em;
+font-weight:600;
+display:inline-block;
+text-decoration:none;
+border-radius:0;
+text-align:center;
+text-transform:uppercase;
+position:absolute;
+bottom:23px;
+right:744px;
+}
+
+.img2 a.buton2 {
+background:none repeat scroll 0 0 #FE9B00;
+color:#090909;
+font-size:1em;
+font-weight:600;
+display:inline-block;
+text-decoration:none;
+border-radius:0;
+text-align:center;
+text-transform:uppercase;
+position:absolute;
+bottom:22px;
+right:496px;
+}
+
+.img3 a.buton3 {
+background:none repeat scroll 0 0 #FE9B00;
+color:#090909;
+font-size:1em;
+font-weight:600;
+display:inline-block;
+text-decoration:none;
+border-radius:0;
+text-align:center;
+text-transform:uppercase;
+position:absolute;
+bottom:22px;
+right:248px;
+}
+
+.img4 a.buton4 {
+background:none repeat scroll 0 0 #FE9B00;
+color:#090909;
+font-size:1em;
+font-weight:600;
+display:inline-block;
+text-decoration:none;
+border-radius:0;
+text-align:center;
+text-transform:uppercase;
+position:absolute;
+bottom:22px;
+right:0;
+}
+
+.social {
+float:left;
+padding:2em 0;
+}
+
+.cerctw {
+color:#47d1ff;
+}
+
+.fa-twitter {
+color:#fdfdfd;
+}
+
+.cercfb {
+color:#375697;
+}
+
+.fa-facebook {
+color:#f8f8f7;
+}
+
+.cercfl {
+color:#b7b7b7;
+}
+
+.fa-flickr {
+color:#085fb7;
+}
+
+.cercin {
+color:#b2b2b2;
+}
+
+.fa-instagram {
+color:#9b5000;
+}
+
+.cercrss {
+color:#ff7c00;
+}
+
+.fa-rss {
+color:#fff;
+}
+
+.blog {
+width:700px;
+float:left;
+}
+
+.connect {
+width:260px;
+float:left;
+}
+
+.social h2 {
+color:#090909;
+text-transform:uppercase;
+font-weight:600;
+font-size:1.3em;
+vertical-align:middle;
+margin:0 0 1em;
+}
+
+.connect ul {
+margin:0;
+padding:0;
+}
+
+.connect ul li {
+display:inline-block;
+margin:0 .5em;
+}
+
+.stanga {
+float:left;
+background:#E2E2E2;
+}
+
+.fnav ul li {
+color:#5D5D5D;
+display:inline-block;
+margin:.2em;
+padding:0;
+}
+
+.stanga a {
+color:#5D5D5D;
+font-size:1em;
+margin:1em 0;
+}
+
+.dreapta {
+float:right;
+background:#E2E2E2;
+padding:0 0 22px 272px;
+}
+
+.creative,.benefits i,.img4 {
+float:left;
+}
+
+.nav ul li a:active,a.read:active {
+color:#000;
+}
+
+.about {
+width:283px;
+float:left;
+padding-right:100px;
+}
+.benefits {
+width:283px;
+float:left;
+padding-left:100px;
+}
+.about h1,.benefits h1,.test h1 {
+color:#090909;
+text-transform:uppercase;
+font-weight:600;
+font-size:1.7em;
+padding-bottom:.5em;
+border-bottom:6px solid #090909;
+vertical-align:middle;
+margin:0 0 1em;
+}
+
+.img1,.img2,.img3 {
+float:left;
+padding-right:33px;
+}

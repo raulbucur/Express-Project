@@ -1,0 +1,12 @@
+<body>
+    <h1>Aici sunt detalii despre </h1>
+    <h2> <%=carte.nume %> </h2>
+    <p>Autor: <strong> <%=carte.autor %></strong></p>
+    <p>An: <strong> <%=carte.an %></strong></p>
+    <h2>Gen: </h2>
+    <ul>
+      <% carte.gen.forEach(function(item){ %>
+        <li> <%=item %> </li>
+      <% }) %>
+    </ul>
+  </body>

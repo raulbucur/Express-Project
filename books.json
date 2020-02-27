@@ -1,0 +1,35 @@
+[
+   {
+      "id":1,
+      "nume":"Kingdom of Ash",
+      "autor":"Sarah  Maas",
+      "an":2018,
+      "gen":[
+         "cărți adolescenți",
+         "ficțiune",
+         "aventură"
+      ]
+   },
+   {
+      "id":2,
+      "nume":"The Intelligent Investor",
+      "autor":"Benjamin Graham",
+      "an":2006,
+      "gen":[
+         "cărți științifice",
+         "business",
+         "finanțe"
+      ]
+   },
+   {
+      "id":3,
+      "nume":"Queen of Air and Darkness",
+      "autor":"Cassandra Clare",
+      "an":2018,
+      "gen":[
+         "cărți adolescenți",
+         "cărți audio",
+         "ficțiune"
+      ]
+   }
+]

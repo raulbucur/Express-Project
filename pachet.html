@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creative Studio</title>
+  <link rel="stylesheet" type="text/css" href="f/mystyle.css">
+</head>
+<body>
+   <div class="container">
+      <!-- header -->
+      <div class="header">
+         <div class="creative">
+            <img alt="creative" src="i/creative1.png"></img>
+         </div>
+         <div class="nav">
+            <ul>
+               <li class="active"><a href="/index">HOME</a></li>
+               <li><a href="#" onmouseover="modificare(this)" onmouseout="modificare2(this)">ABOUT US</a></li>
+               <li><a href="https://www.danielspatzek.com/viita_titan" onmouseover="modificare(this)" onmouseout="modificare2(this)" target="_blank">PORTFOLIO</a></li>
+               <li><a href="#" onmouseover="modificare(this)" onmouseout="modificare2(this)">SERVICES</a></li>
+               <li><a href="#" onmouseover="modificare(this)" onmouseout="modificare2(this)">BLOG</a></li>
+               <li><a href="/form" onmouseover="modificare(this)" onmouseout="modificare2(this)">CONTACT US</a></li>
+            </ul>
+         </div>
+         <!-- header -->
+      </div>
+      <form action="/confirmare" autocomplete="on" >
+         <fieldset id="invitat">
+		 <legend>Detalii client</legend>
+			<label for="nameinput">Nume</label>
+            <input type="text" id="nameinput" name="name" required="required" />
+            <br><label for="addrinput">Adresa</label>
+            <input type="text" id="addrinput" name="address" required="required" />
+            <br><label for="cityinput">Oras</label>
+            <input type="text" id="cityinput" name="city" required="required" />
+            <br><label for="emailinput">Email</label>
+            <input type="email" id="emailinput" name="email" required="required" />
+            <br><label for="phoneinput">Telefon</label>
+            <input type="text" id="phoneinput" name="phone" required="required" />
+		 </fieldset>
+
+		 <fieldset id="orderInfo">
+		 <fieldset id="meniu">
+		 <legend>Selectie Pachete</legend>
+		 <input type="checkbox" id="item1" value="2500" />
+         <label for="item1">Simple graphic Design (2500 LEI)</label>
+         <br><input type="checkbox" id="item2" value="3500" />
+         <label for="item2">Complex graphic Design (3500 LEI)</label>
+        <br> <input type="checkbox" id="item3" value="2000" />
+         <label for="item3">Social media marketing(2000 LEI)</label>
+         <br><input type="checkbox" id="item4" value="5000" />
+         <label for="item4">Complex graphic design & social media marketing (5000 LEI)</label>
+
+		 </fieldset>
+         <input type="button" value="Calcul " id="cButton" />
+
+
+
+      <table>
+         <colgroup>
+            <col class="label" />
+            <col class="amount" />
+         </colgroup>
+         <tbody>
+            <tr>
+               <td>Total</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>TVA</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Total cu TVA</td>
+               <td>0.00</td>
+            </tr>
+         </tbody>
+      </table>
+	   </fieldset>
+	   <input type="submit" id="nextBtn" value="Next &gt;" />
+	  </form>
+	  <input type="button" value="Confirmare " id="confirmButton" />
+   </article>
+   <section>
+         <h2>Previzualizare comanda</h2>
+         <h3>Informatii client</h3>
+		 <div id="infoInvitat">
+
+         </div>
+         <div id="comanda">
+            <h3>Comanda</h3>
+         </div>
+      </section>
+      <footer>
+         <div class="footer">
+            <div class="stanga">
+               <div class="fnav">
+                  <ul>
+                     <li><a href="/index">HOME</a></li>
+                     <a>|</a>
+                     <li><a href="about.html">ABOUT US</a></li>
+                     <a>|</a>
+                     <li><a target="_blank" href="https://www.danielspatzek.com/viita_titan">PORTFOLIO</a></li>
+                     <a>|</a>
+                     <li><a href="#">SERVICES</a></li>
+                     <a>|</a>
+                     <li><a href="#">BLOG</a></li>
+                     <a>|</a>
+                     <li><a href="/form">CONTACT US</a></li>
+                  </ul>
+               </div>
+               <p><i class="fa fa-copyright"></i> 2018 CreativeStudio. All Rights Reserved</p>
+            </div>
+            <div class="dreapta">
+               <img alt="creative2" src="i/creative2.png"></img>
+            </div>
+         </div>
+      </footer>
+   <script>
+   function calculTotal() {
+let itemTotal = 0.0;
+let tax = 0.0;
+let totalWithTax = 0.0;
+
+let items = document.getElementsByTagName("input");
+
+let cells = document.getElementsByTagName("td");
+
+for (let i = 0; i < items.length; i++) {
+ if (items[i].type==="checkbox"&items[i].checked) {
+ itemTotal += (Number(items[i].value));
+ }
+ }
+
+tax=itemTotal*0.19;
+totalWithTax=itemTotal+tax;
+
+cells[1].innerHTML=itemTotal;
+cells[3].innerHTML=tax;
+cells[5].innerHTML=totalWithTax
+
+}//end of function
+
+let calcButton=document.getElementById("cButton");
+calcButton.addEventListener("click",calculTotal);
+
+calcButton.addEventListener("click", previewInfo);
+
+function show(){console.log("success")};
+
+function previewInfo(){
+
+let infoInvitat=document.getElementById("infoInvitat");
+let invitat={};
+//let infoComanda=document.getElementById("infoComanda");
+invitat.name=document.getElementById("nameinput").value;
+invitat.addr=document.getElementById("addrinput").value;
+invitat.city=document.getElementById("cityinput").value;
+invitat.email=document.getElementById("emailinput").value;
+invitat.phone=document.getElementById("phoneinput").value;
+infoInvitat.innerHTML ="";
+for (let prop in invitat){
+
+infoInvitat.innerHTML +="<p>"+invitat[prop]+"</p>"};
+
+document.getElementsByTagName("section")[0].style.display="block";
+}//
+document.getElementsByTagName("section")[0].style.display="none";
+
+   </script>
+</body>
+</html>
